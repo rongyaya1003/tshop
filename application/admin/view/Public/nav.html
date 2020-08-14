@@ -1,0 +1,16 @@
+<div class="left-side-inner">
+    <!--Sidebar nav-->
+    <ul class="nav nav-pills nav-stacked custom-nav">
+        {volist name="admin_menu" id="vo"}
+        <li class="menu-list nav-active"><a href="#"><i class="icon-home"></i> <span>{$vo.name}</span></a>
+            <ul class="sub-menu-list">
+                {volist name="vo.child" id="vs"}
+                    <li><a href="{$vs.url}"> {$vs.name} </a></li>
+                {/volist}
+            </ul>
+        </li>
+        {/volist}
+    </ul>
+    <!--End sidebar nav-->
+
+</div>

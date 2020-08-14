@@ -1,0 +1,120 @@
+{include file="Public/header" /}
+
+<body class="sticky-header">
+
+
+<!--Start left side Menu-->
+<div class="left-side sticky-left-side">
+
+    {include file="Public/logo" /}
+    {include file="Public/nav" /}
+</div>
+<!--End left side menu-->
+
+
+<!-- main content start-->
+<div class="main-content" >
+
+    {include file="Public/top" /}
+
+    <!--body wrapper start-->
+    <div class="wrapper">
+
+        <!--Start Page Title-->
+        <div class="page-title-box">
+            <h4 class="page-title">全局设置</h4>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="#">设置</a>
+                </li>
+                <li class="active">
+                    全局设置
+                </li>
+            </ol>
+            <div class="clearfix"></div>
+        </div>
+        <!--End Page Title-->
+
+
+        <!--Start row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="white-box">
+                    <h2 class="header-title">全局设置</h2>
+                    <form class="js-validation-bootstrap form-horizontal" action="" method="post">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="site_name">网站名称 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="site_name" name="site_name" value="{$setting_list['site_name']}" placeholder="网站名称将显示在前台顶部欢迎信息等位置">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="icp_number">ICP证书号 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="icp_number" name="icp_number" value="{$setting_list['icp_number']}" placeholder="网站备案信息将显示在前台页面底部，如果没有请留空">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="flow_code">第三方流量统计代码 </label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="flow_code" name="flow_code" rows="14" placeholder="可在此处插入三方统计用代码，并于前台页面底部可以显示"> {$setting_list['flow_code']}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="site_email">站点联系邮件 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="site_email" name="site_email" value="{$setting_list['site_email']}" placeholder="首页显示，方便用户遇到问题时咨询">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="site_address">联系地址 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="site_address" name="site_address" value="{$setting_list['site_address']}" placeholder="首页显示，方便用户遇到问题时咨询">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="contact_name">联系人 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="contact_name" name="contact_name" value="{$setting_list['contact_name']}" placeholder="首页显示，方便用户遇到问题时咨询">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="site_phone">站点联系电话 </label>
+                            <div class="col-md-9">
+                                <input class="form-control" type="text" id="site_phone" name="site_phone" value="{$setting_list['site_phone']}" placeholder="首页显示，方便用户遇到问题时咨询，多个请用半角逗号 ',' 隔开">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="about_us">网站介绍 </label>
+                            <div class="col-md-9">
+                                <textarea class="form-control" id="about_us" name="about_us" rows="14" placeholder="首页显示，网站介绍">{$setting_list['about_us']}</textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-3">
+                                <input class="btn  btn-primary" type="submit" value="提交设置">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+
+    </div>
+    <!-- End Wrapper-->
+
+
+    <!--Start  Footer -->
+    <footer class="footer-main">Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></footer>
+    <!--End footer -->
+
+</div>
+<!--End main content -->
+
+
+{include file="Public/footer" /}
+</body>
+
+</html>
